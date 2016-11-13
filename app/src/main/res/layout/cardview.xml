@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="62dp"
+    android:orientation="vertical"
+    android:padding="2dp">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/CardView"
+        android:layout_width="365dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="#FFF"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="4dp">
+
+        <TextView
+            android:id="@+id/CardViewTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:paddingLeft="15dp"
+            android:text="1"
+            android:textSize="30dp" />
+
+        <Switch
+            android:id="@+id/CardViewSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:paddingRight="10dp"
+            android:switchMinWidth="40dp" />
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

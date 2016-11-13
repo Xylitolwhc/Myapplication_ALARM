@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="4dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="4dp">
+
+            <TimePicker
+                android:id="@+id/timePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:timePickerMode="clock"></TimePicker>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="4dp">
+
+            <TextView
+                android:id="@+id/Repeat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:paddingLeft="10dp"
+                android:text="是否重复响铃"
+                android:textSize="20dp" />
+
+            <Switch
+                android:id="@+id/RepeatSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:paddingRight="10dp"
+                android:switchMinWidth="40dp" />
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/MusicPathViewCard"
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="4dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:paddingLeft="10dp"
+                android:text="闹铃音乐"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/Music"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:gravity="right|center"
+                android:maxLines="1"
+                android:paddingRight="10dp"
+                android:text="请选择闹钟铃声" />
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/SpecialViewCard"
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="4dp">
+
+            <TextView
+                android:id="@+id/Special"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:paddingLeft="10dp"
+                android:text="叫醒方式"
+                android:textSize="20dp" />
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>
